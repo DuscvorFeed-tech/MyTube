@@ -1,0 +1,17 @@
+@import '../../styles/shared.scss';
+
+main {
+
+  .vid-list {
+    background: $light-grey;
+    margin-top: 40px;
+    margin-left: -15px;
+    margin-bottom: 80px;
+    padding: 20px 50px 50px;
+
+    @media screen and (max-width: 1024px) {
+      margin-left: 15px;
+    }
+
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../../styles/shared.scss';
+
+
+.page-content {
+    padding: 65px 0em 4em 0em;
+
+  }
+  
+  .grid {
+    text-align: center;
+    justify-content: center;
+    height: '100vh';
+    vertical-align: middle;
+    .grid-column {
+          max-width: 450px;
+         
+    }
+  
+    .ui.segment {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+    }
+    .header {
+      text-align: center;
+    }
+  
+    .form {
+      size: large;
+    }
+  }
+
+  .logo {
+    width:150px;
+  }
+
+  .login-button {
+    color:#c0c4cc !important;
+    background-color: #050a30 !important;
+    height: 60px !important;
+  }
+
+  h3 {
+    color:#c0c4cc !important;
+         font-weight: bold;
+  }
+  .message {
+   
+    background:#46484d !important;
+    background-color:#46484d !important;
+    border: none !important;
+    padding: 0 !important;
+    a {
+       background:#46484d !important;
+        background-color:#46484d !important;
+         color:#c0c4cc !important;
+         font-weight: bold;
+    }
+  }

@@ -1,0 +1,29 @@
+@import '../../styles/shared.scss';
+
+.search-grid {
+    & > * {
+      margin-top: 4px;
+    }
+
+    display: grid;
+    grid: auto / auto;
+    padding-top: 4rem;
+    padding-left: 10rem;
+    grid-row-gap: 10px;
+    max-width: 900px;
+  }
+
+
+  @media all and (max-width: 600px) {
+    .search-grid {
+      & > * {
+        margin-top: 2px;
+      }
+  
+      display: grid;
+      grid: auto / auto;
+      padding-top: 6rem;
+      padding-left: 0px;
+      max-width: 1024px;
+    }
+  }

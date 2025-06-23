@@ -1,0 +1,19 @@
+.related-videos {
+    & > * {
+      margin-top: 4px;
+    }
+    max-width:402px;
+  }
+
+  .related-grid {
+    & > * {
+      margin-top: 4px;
+    }
+    max-width:402px;
+    display: grid;
+    grid: auto / auto;
+    grid-row-gap: 10px;
+    max-width: 900px;
+  }
+
+  

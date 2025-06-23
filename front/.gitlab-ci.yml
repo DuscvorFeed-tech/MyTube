@@ -1,0 +1,61 @@
+stages:
+    - Staging
+    - Production
+ 
+Deploy_Staging:
+   stage: Staging
+   script:
+    - ssh -p 52448 wryfrontstg@192.167.10.30 /bin/bash -s << EOT
+    - cd /home/wryfrontstg/wry-front
+    - git status
+    - git checkout -- .env
+    - git checkout master
+    - git pull
+    - git checkout $CI_COMMIT_TAG
+    - git status
+    - pm2 status
+    - cp internals/environments/.env.staging .env
+    - npm install
+    #- npm run build
+    - pm2 del wry-front-stg
+    - pm2 start --name wry-front-stg server/
+    - pm2 save
+    - pm2 status
+   tags:
+    - wry-ci-front
+   only:
+    - tags
+    - master
+   environment:
+    name: wry-front-staging
+    url: https://wry-front-stg.ipfssys.info
+   when: manual
+   
+Deploy_Production:
+   stage: Production
+   script:
+    - ssh -p 52448 filecoinwry@192.167.10.30 /bin/bash -s << EOT
+    - cd /home/filecoinwry/wry-front
+    - git status
+    - git checkout -- .env
+    - git checkout master
+    - git pull
+    - git checkout $CI_COMMIT_TAG
+    - git status
+    - pm2 status
+    - cp internals/environments/.env.production .env
+    - npm install
+    #- npm run build
+    - pm2 del wry-front
+    - pm2 start --name wry-front server/
+    - pm2 save
+    - pm2 status
+   tags:
+    - wry-ci-front
+   only:
+    - tags
+    - master
+   environment:
+    name: wry-front-production
+    url: https://dev-front.mytube.cloud/
+   when: manual

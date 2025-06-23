@@ -1,0 +1,390 @@
+@import '../../styles/shared.scss';
+
+
+.metadata {
+    a > div {
+      margin-top: 8px;
+    }
+    color: #707070;
+    font-size: 16px;
+    position: relative;
+    
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+    }
+
+    h3 {
+        font: normal normal bold 25px/20px Segoe UI;
+        color: $text-color-dark;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .video-count {
+        color: #707070;
+        font: normal normal 600 20px/27px Segoe UI;
+        position: relative;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .lock-icon {
+        vertical-align: top;
+    }
+
+    .video-stats {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        .video-actions {
+            display: flex;
+            align-items: center;
+            & > *:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+
+        .video-actions-mobile {
+            display: none;
+        }
+    }
+    .description {
+      margin-left: 20px;
+      line-height: 70px;
+
+      @media screen and (max-width: 480px) {
+        line-height: 30px;
+      }
+    }
+    .box-details {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 20px;
+
+        
+        @media screen and (max-width: 480px) {
+          padding-bottom: 2px;
+        }
+    
+        .author-vid {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+          background: $white;
+          margin-right: 10px;
+        }
+    
+          .vid-title {
+            display: block;
+            color: #2b2a2b;
+            font-family: Inter, var(--default-font-family);
+            font-size: 20.399999618530273px;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: left;
+            white-space: nowrap;
+          }
+    
+          .author-name {
+            display: block;
+            color: #565656;
+            font-family: Inter, var(--default-font-family);
+            font-size: 16.799999237060547px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            white-space: nowrap;
+          }
+    
+          .views-days-icons {
+            display: flex;
+            margin-top: 0px;
+            align-items: center;
+    
+            .views, .days {
+              color: #3f3e3f;
+              font-family: Inter, var(--default-font-family);
+              font-size: 15.200000762939453px;
+              font-weight: 400;
+              line-height: 25.657px;
+              text-align: left;
+              white-space: nowrap;
+            }
+    
+            .dash {
+              margin-right: 3px;
+              margin-left: 3px;
+            }
+    
+            .icons {
+              color: $red;
+              margin-left: 3px;
+            }
+          }
+
+          .details {
+            .box-subscribe {
+              border: 1px solid black;
+              margin-top: 5px;
+              align-items: center;
+              text-align: justify;
+
+              .subscribe {
+                margin: 5px;
+                font-size: 0.8em;
+                font-weight: bold;
+                text-align: justify;
+                align-content: center;
+              }
+            }
+          }
+
+      }
+
+      
+      .share-box { 
+        margin: 20px;
+        
+        .share-title {
+          font-weight: bold;
+          color: black;
+          font-size: 1em;
+        }
+
+        .share-icon {
+          background: #212121 0% 0% no-repeat padding-box;
+          opacity: 1;
+          cursor: pointer;
+        }
+
+        .share-icon-image {
+          width: 34px;
+          height: 34px;
+          padding: 3px;
+          cursor: pointer;
+          opacity: 1;
+        }
+
+        .share-icon-email {
+          width: 40px;
+          height: 40px;
+          padding: 3px;
+          cursor: pointer;
+          opacity: 1;
+        }
+
+        .link-box {
+          padding-top: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          resize: horizontal;
+
+          .link-icon {
+            padding: 10px;
+            width: 40px;
+          }
+
+          .link {
+            color:black;
+          }
+        }
+
+        .copylink-button {
+          border:none;
+          color:blue;
+          text-decoration: underline;
+          background-color: none;
+        }
+      }
+    
+      .mobile-box-details {
+        display: none;
+        padding: 0px 5px;
+    
+        
+    
+        .vid-title {
+          display: block;
+          color: #2b2a2b;
+          font-family: Inter, var(--default-font-family);
+          font-size: 20.399999618530273px;
+          font-weight: 600;
+          line-height: 28px;
+          text-align: left;
+          white-space: nowrap;
+        }
+    
+        .views-days {
+          display: flex;
+          margin-top: 5px;
+          align-items: center;
+          color: #3f3e3f;
+          font-family: Inter, var(--default-font-family);
+          font-size: 15.200000762939453px;
+          font-weight: 400;
+          line-height: 25.657px;
+          text-align: left;
+          white-space: nowrap;
+        }
+    
+        .dash {
+          margin: 0px 3px;
+        }
+    
+        
+        .author-vid {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+          background: $white;
+          margin-right: 10px;
+        }
+    
+          .vid-title {
+            display: block;
+            color: #2b2a2b;
+            font-family: Inter, var(--default-font-family);
+            font-size: 20.399999618530273px;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: left;
+            white-space: nowrap;
+          }
+    
+          .author-name {
+            display: block;
+            color: #565656;
+            font-family: Inter, var(--default-font-family);
+            font-size: 16.799999237060547px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            white-space: nowrap;
+          }
+    
+          .views-days-icons {
+            display: flex;
+            margin-top: 0px;
+            align-items: center;
+    
+            .views, .days {
+              font-family: Inter, var(--default-font-family);
+              font-size: 15.200000762939453px;
+              font-weight: 400;
+              line-height: 25.657px;
+              text-align: left;
+              white-space: nowrap;
+            }
+    
+            .dash {
+              margin-right: 3px;
+              margin-left: 3px;
+            }
+    
+            .icons {
+              color: $red;
+              margin-left: 3px;
+            }
+          }
+
+        .share-box { 
+          .share-title {
+            font-weight: bold;
+            color: black;
+            font-size: 1em;
+          }
+
+          .share-icon {
+            padding: 10px;
+            cursor: pointer;
+          }
+
+          .link-box {
+            padding-top: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            resize: horizontal;
+  
+            .link-icon {
+              padding: 10px;
+              width: 40px;
+            }
+  
+            .link {
+              color:black;
+              
+  
+            }
+          }
+        }
+    
+      }
+}
+
+@media all and (max-width: 600px) {
+    .metadata {
+        position: inherit;
+        color: #707070;
+        font-size: 13px;
+        height:300px;
+    
+        h3 {
+          font: normal normal bold 18px/14px Segoe UI;
+        }
+
+        
+          .video-count {
+            color: #707070;
+            font: normal normal 600 10px/17px Segoe UI;
+            position: relative;
+            margin: 20px;
+        }
+    
+        .video-stats {
+            display: block;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+    
+            .video-actions {
+               display: none;
+            }
+
+            .video-actions-mobile {
+                display: block;
+                padding-top: 1rem;
+                align-items: center;
+                & > *:not(:last-child) {
+                    margin-right: 8px;
+                }
+
+                .action-buttons {
+                    float:right;
+                }
+            }
+        }
+        
+        .copylink-button {
+          border:none;
+          color:blue;
+          text-decoration: underline;
+          background-color: none;
+        }
+
+    }
+}
+
+
+  .vid-details {
+    color: $black;
+    position: relative;
+    text-decoration: none;
+    
+  }

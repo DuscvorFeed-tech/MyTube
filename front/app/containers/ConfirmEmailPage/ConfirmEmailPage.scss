@@ -1,0 +1,25 @@
+@import '../../styles/shared.scss';
+
+
+.page-content {
+    padding: 65px 0em 4em 0em;
+  }
+  
+  .grid {
+    text-align: center;
+    justify-content: center;
+    height: '100vh';
+    vertical-align: middle;
+  
+    .grid-column {
+      max-width: 450px;
+    }
+  
+    .header {
+      text-align: center;
+    }
+  
+    .form {
+      size: large;
+    }
+  }

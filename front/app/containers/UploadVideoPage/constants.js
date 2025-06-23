@@ -1,0 +1,18 @@
+/*
+ *
+ * RegisterPage constants
+ *
+ */
+
+const APP_NAME = 'app/UploadVideoPage';
+
+export const DEFAULT_ACTION = 'app/UploadVideoPage/DEFAULT_ACTION';
+export const VIDEO_PROCESS = `${APP_NAME}/VIDEO_PROCESS`;
+export const VIDEO_PROCESS_SUCCESS = `${APP_NAME}/VIDEO_PROCESS_SUCCESS`;
+export const SUBMIT_UPLOAD = `${APP_NAME}/SUBMIT_REGISTER`;
+export const SET_ERRORS = `${APP_NAME}/SET_ERRORS`;
+export const SUBMIT_UPLOAD_SUCCESS = `${APP_NAME}/SUBMIT_UPLOAD_SUCCESS`;
+export const LOAD_THUMBNAIL = `${APP_NAME}/LOAD_THUMBNAIL`;
+export const LOAD_CATEGORY = `${APP_NAME}/LOAD_CATEGORY`;
+export const LOAD_CATEGORY_SUCCESS = `${APP_NAME}/LOAD_CATEGORY_SUCCESS`;
+export const SET_CATEGORY = `${APP_NAME}/SET_CATEGORY`;

@@ -1,0 +1,8 @@
+/**
+ *
+ * Asynchronously loads the component for CategoryVideoPage
+ *
+ */
+import loadable from '../../utils/loadable';
+
+export default loadable(() => import('./index'));
