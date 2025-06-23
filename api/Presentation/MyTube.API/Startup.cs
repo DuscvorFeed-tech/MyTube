@@ -176,7 +176,5 @@ namespace MyTube.API
                 endpoints.MapControllers();
             });
         }
-
     }
-
 }
